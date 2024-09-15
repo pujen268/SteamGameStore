@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Game Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="steam-logo.png" alt="Game Store Logo"></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="game-detail.html">Game Details</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for games...">
+                <button>Search</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to Steam Game Store</h1>
+            <p>Your one-stop shop for the latest and greatest games!</p>
+        </section>
+        <section class="games">
+            <div class="game">
+                <img src="gta5-game-cover.jpg" alt="Grand Theft Auto V">
+                <h2>Grand Theft Auto V</h2>
+                <p>$19.99</p>
+                <button onclick="addToCart('gta5', 'Grand Theft Auto V', '$19.99')">Buy Now</button>
+            </div>
+            <div class="game">
+                <img src="farcry5-game-cover.jpg" alt="FARCRY 5">
+                <h2>FARCRY 5</h2>
+                <p>$29.99</p>
+                <button onclick="addToCart('farcry5', 'FARCRY 5', '$29.99')">Buy Now</button>
+            </div>
+            <div class="game">
+                <img src="watchdogs-game-cover.jpg" alt="WATCHDOGS">
+                <h2>WATCHDOGS</h2>
+                <p>$39.99</p>
+                <button onclick="addToCart('watchdogs', 'WATCHDOGS', '$39.99')">Buy Now</button>
+            </div>
+            <div class="game">
+                <img src="thelastofus-game-cover.jpg" alt="THE LAST OF US">
+                <h2>THE LAST OF US</h2>
+                <p>$49.99</p>
+                <button onclick="addToCart('thelastofus', 'THE LAST OF US', '$49.99')">Buy Now</button>
+            </div>
+            <div class="game">
+                <img src="blackmythwukong-game-cover.jpg" alt="BLACK MYTH WUKONG">
+                <h2>BLACK MYTH WUKONG</h2>
+                <p>$59.99</p>
+                <button onclick="addToCart('blackmythwukong', 'BLACK MYTH WUKONG', '$59.99')">Buy Now</button>
+            </div>
+            <div class="game">
+                <img src="gta6-game-cover.jpg" alt="Grand Theft Auto VI">
+                <h2>Grand Theft Auto VI</h2>
+                <p>$39.99</p>
+                <button onclick="addToCart('gta6', 'Grand Theft Auto VI', '$39.99')">Buy Now</button>
+            </div>
+            <div class="game">
+                <img src="cyberpuk2077-game-cover.jpg" alt="Cyberpunk 2077">
+                <h2>Cyberpunk 2077</h2>
+                <p>$59.99</p>
+                <button onclick="addToCart('cyberpunk2077', 'Cyberpunk 2077', '$59.99')">Buy Now</button>
+            </div>
+            <div class="game">
+                <img src="reddeadredemption2-game-cover.jpg" alt="Red Dead Redemption 2">
+                <h2>Red Dead Redemption 2</h2>
+                <p>$49.99</p>
+                <button onclick="addToCart('reddeadredemption2', 'Red Dead Redemption 2', '$49.99')">Buy Now</button>
+            </div>
+            <div class="game">
+                <img src="horizonzerodawn.jpg" alt="Horizon Zero Dawn">
+                <h2>Horizon Zero Dawn</h2>
+                <p>$39.99</p>
+                <button onclick="addToCart('horizonzerodawn', 'Horizon Zero Dawn', '$39.99')">Buy Now</button>
+            </div>
+            <div class="game">
+                <img src="assassinsceedvalhalla-game-cover.jpg" alt="Assassin's Creed Valhalla">
+                <h2>Assassin's Creed Valhalla</h2>
+                <p>$59.99</p>
+                <button onclick="addToCart('assassinscreedvalhalla', 'Assassin\'s Creed Valhalla', '$59.99')">Buy Now</button>
+            </div>
+            <div class="game">
+                <img src="thewitcher3-game-cover.jpg" alt="The Witcher 3">
+                <h2>The Witcher 3</h2>
+                <p>$29.99</p>
+                <button onclick="addToCart('thewitcher3', 'The Witcher 3', '$29.99')">Buy Now</button>
+            </div>
+            <div class="game">
+                <img src="spiderman-game-cover.jpg" alt="Spider-Man">
+                <h2>Spider-Man</h2>
+                <p>$49.99</p>
+                <button onclick="addToCart('spiderman', 'Spider-Man', '$49.99')">Buy Now</button>
+            </div>
+            <div class="game">
+                <img src="doometernal-game-cover.jpg" alt="Doom Eternal">
+                <h2>Doom Eternal</h2>
+                <p>$39.99</p>
+                <button onclick="addToCart('doometernal', 'Doom Eternal', '$39.99')">Buy Now</button>
+            </div>
+            <div class="game">
+                <img src="deathloop-game-cover.jpg" alt="Deathloop">
+                <h2>Deathloop</h2>
+                <p>$59.99</p>
+                <button onclick="addToCart('deathloop', 'Deathloop', '$59.99')">Buy Now</button>
+            </div>
+            <div class="game">
+                <img src="control-game-over.jpg" alt="Control">
+                <h2>Control</h2>
+                <p>$39.99</p>
+                <button onclick="addToCart('control', 'Control', '$39.99')">Buy Now</button>
+            </div>
+            <div class="game">
+                <img src="valhalla-game-cover.jpg" alt="Valhalla">
+                <h2>Valhalla</h2>
+                <p>$49.99</p>
+                <button onclick="addToCart('valhalla', 'Valhalla', '$49.99')">Buy Now</button>
+            </div>
+            <div class="game">
+                <img src="destiny2-game-cover.jpg" alt="Destiny 2">
+                <h2>Destiny 2</h2>
+                <p>$29.99</p>
+                <button onclick="addToCart('destiny2', 'Destiny 2', '$29.99')">Buy Now</button>
+            </div>
+            <div class="game">
+                <img src="angrybirds-game-cover.jpg" alt="Angry Birds">
+                <h2>Angry Birds</h2>
+                <p>$4.99</p>
+                <button onclick="addToCart('angrybirds', 'Angry Birds', '$4.99')">Buy Now</button>
+            </div>
+            <div class="game">
+                <img src="clashroyale-game-cover.jpg" alt="Clash Royale">
+                <h2>Clash Royale</h2>
+                <p>$10.00</p>
+                <button onclick="addToCart('clashroyale', 'Clash Royale', '$10.00')">Buy Now</button>
+            </div>
+            <div class="game">
+                <img src="puzzel-game-cover.jpg" alt="Puzzle Game">
+                <h2>Puzzle Game</h2>
+                <p>$2.99</p>
+                <button onclick="addToCart('puzzlegame', 'Puzzle Game', '$2.99')">Buy Now</button>
+            </div>
+            <div class="game">
+                <img src="mobilelegends-game-cover.jpg" alt="Mobile Legends">
+                <h2>Mobile Legends</h2>
+                <p>$70.00</p>
+                <button onclick="addToCart('mobilelegends', 'Mobile Legends', '$70.00')">Buy Now</button>
+            </div>
+            <div class="game">
+                <img src="plants-game-cover.jpg" alt="Plants vs Zombies">
+                <h2>Plants vs Zombies</h2>
+                <p>$3.99</p>
+                <button onclick="addToCart('plantsvszombies', 'Plants vs Zombies', '$3.99')">Buy Now</button>
+            </div>
+            <div class="game">
+                <img src="candycrush-game-cover.jpg" alt="Candy Crush">
+                <h2>Candy Crush</h2>
+                <p>$10.00</p>
+                <button onclick="addToCart('candycrush', 'Candy Crush', '$10.00')">Buy Now</button>
+            </div>
+            <div class="game">
+                <img src="pubgm-game-cover.jpg" alt="PUBG Mobile">
+                <h2>PUBG Mobile</h2>
+                <p>$1.00</p>
+                <button onclick="addToCart('pubgm', 'PUBG Mobile', '$1.00')">Buy Now</button>
+            </div>
+            <div class="game">
+                <img src="fortm-game-cover.jpg" alt="Fortnite Mobile">
+                <h2>Fortnite Mobile</h2>
+                <p>$34.00</p>
+                <button onclick="addToCart('fortm', 'Fortnite Mobile', '$34.00')">Buy Now</button>
+            </div>
+            <div class="game">
+                <img src="genshinimpact-game-cover.jpg" alt="Genshin Impact">
+                <h2>Genshin Impact</h2>
+                <p>$2.00</p>
+                <button onclick="addToCart('genshinimpact', 'Genshin Impact', '$2.00')">Buy Now</button>
+            </div>
+            <div class="game">
+                <img src="amongus-game-cover.jpg" alt="Among Us">
+                <h2>Among Us</h2>
+                <p>$4.99</p>
+                <button onclick="addToCart('amongus', 'Among Us', '$4.99')">Buy Now</button>
+            </div>
+            <div class="game">
+                <img src="codm-game-cover.jpg" alt="Call of Duty: Mobile">
+                <h2>Call of Duty: Mobile</h2>
+                <p>$10.00</p>
+                <button onclick="addToCart('codm', 'Call of Duty: Mobile', '$10.00')">Buy Now</button>
+            </div>
+            <div class="game">
+                <img src="brwal-stars-game-cover.jpg" alt="Brawl Stars">
+                <h2>Brawl Stars</h2>
+                <p>$10.00</p>
+                <button onclick="addToCart('brwalstars', 'Brawl Stars', '$10.00')">Buy Now</button>
+            </div>
+        </section>
+    </main>    
+
+    <footer>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="game-detail.html">Game Details</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+        <div class="social-media">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+        </div>
+        <form class="newsletter">
+            <label for="newsletter-email">Subscribe to our newsletter:</label>
+            <input type="email" id="newsletter-email" placeholder="Your email address">
+            <button type="submit">Subscribe</button>
+        </form>
+    </footer>
+</body>
+</html>
